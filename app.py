@@ -289,7 +289,7 @@ def format_new_columns(ws, cols):
 # ---------------------------------------
 # STREAMLIT UI
 # ---------------------------------------
-st.title("🏢 Rent Roll Processor \n * Charge Codes Extractor From Rent Roll or Affordable Rent Roll Excel File.")
+st.title("🏢 Rent Charge Codes Extractor \n * Charge Codes Extractor From Rent Roll or Affordable Rent Roll Excel File.")
 
 uploaded = st.file_uploader("Ensure to upload the file for Rent Roll or Affordable Rent Roll Only.", type=["xlsx"])
 
@@ -337,3 +337,4 @@ if uploaded:
 
         except Exception as e:
             st.error(f"❌ Error: {e}")
+
